@@ -3,7 +3,7 @@
 These are my attempts at this Kata. 
 
 Notice that, in Python (as it's dynamically typed and supports duck typing), it's possible to subclass the `Item` and to add an `update` method just to each of the subclasses (and not to the `Item` itself). One would think of that as a valid solution, because by embedding the behavior on each item type at creation time it seem to be possible to avoid the item mapper/factory, but that misses two important facts:
-1. Originally, this is a C# kata and, as far as I know, this way wouldn't even be possible in C#.
+1. Originally, this is a C# kata and, as far as I know, this way wouldn't even be possible in C# (because you would need an abstract method in the base class).
 2. Raw `Item` instances would fail to be handled, which is a big hole.
 
 ## Requirements Specification
